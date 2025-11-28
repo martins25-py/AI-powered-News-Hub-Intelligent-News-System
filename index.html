@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Site - Página Inicial</title>
+  <meta name="description" content="Página inicial gerada automaticamente." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Mini CSS de exemplo para visual agradável */
+    :root{--bg:#f7f9fc;--card:#fff;--accent:#0b74de}
+    body{font-family:Inter,system-ui,Arial;margin:0;background:var(--bg);color:#111}
+    header{background:linear-gradient(90deg,var(--accent),#2fb6ff);color:#fff;padding:28px 20px}
+    .container{max-width:1100px;margin:24px auto;padding:0 16px}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,.06)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    footer{padding:20px;text-align:center;color:#666;font-size:.9rem}
+    nav{display:flex;gap:12px;align-items:center}
+    nav a{color:rgba(255,255,255,.95);text-decoration:none;font-weight:600}
+    .hero{display:flex;gap:20px;align-items:center;justify-content:space-between}
+    .hero .cta{background:#fff;color:var(--accent);padding:10px 16px;border-radius:10px;font-weight:700;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div style="font-weight:800">LOGO</div>
+        <div style="margin-left:auto">
+          <a href="#">Home</a>
+          <a href="#" style="margin-left:12px">Produtos</a>
+          <a href="#" style="margin-left:12px">Sobre</a>
+          <a href="#" style="margin-left:12px">Contato</a>
+        </div>
+      </nav>
+      <div class="hero" style="margin-top:18px">
+        <div>
+          <h1 style="margin:0;padding:0;color:white">Bem-vindo ao seu site</h1>
+          <p style="color:rgba(255,255,255,.9)">Página inicial gerada automaticamente. Edite este arquivo para personalizar.</p>
+          <a class="cta" href="#">Ver Produtos</a>
+        </div>
+        <img src="assets/hero.png" alt="Hero" style="height:96px;opacity:.95" onerror="this.style.display='none'"/>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <section class="card" style="margin-top:18px">
+      <h2>Sobre</h2>
+      <p>Esta é a página principal. Substitua este conteúdo pelo seu conteúdo real. Se o seu projeto tiver um build com frameworks (React, Next.js, Vite), coloque este arquivo na pasta pública (public/ ou dist/).</p>
+    </section>
+
+    <section class="card" style="margin-top:16px">
+      <h2>Últimas novidades</h2>
+      <div class="grid" style="margin-top:12px">
+        <article class="card"><h3>Título 1</h3><p>Resumo do conteúdo ou produto.</p></article>
+        <article class="card"><h3>Título 2</h3><p>Resumo do conteúdo ou produto.</p></article>
+        <article class="card"><h3>Título 3</h3><p>Resumo do conteúdo ou produto.</p></article>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:16px">
+      <h2>Recursos</h2>
+      <ul>
+        <li>Layout responsivo</li>
+        <li>SEO básico (meta tags)</li>
+        <li>Pronto para integrar com CMS ou APIs</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Seu Site. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.querySelector('footer p').innerText = `© ${new Date().getFullYear()} - Seu Site. Todos os direitos reservados.`;
+  </script>
+</body>
+</html>
